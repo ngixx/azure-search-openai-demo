@@ -13,7 +13,7 @@ const Layout = () => {
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
-                    <h3 className={styles.headerTitle}>[ngixx] Prototype</h3>
+                    <h3 className={styles.headerTitle}>[ngixx] Multi-Agent AI for Your Medical Journey</h3>
                     {useLogin && <LoginButton />}
                 </div>
             </header>

@@ -280,6 +280,7 @@ const Chat = () => {
                     {!lastQuestionRef.current ? (
                         <div className={styles.chatEmptyState}>
                             <h1 className={styles.chatEmptyStateTitle}>[ngixx] Prototype</h1>
+                            <h2 style={{ color: '#FF4F00' }} className={styles.chatEmptyStateSubtitle}>Case: A 57-Year-Old Woman with Melanoma and Fever (Documents Already Uploaded)</h2>
                             <h2 className={styles.chatEmptyStateSubtitle}>Ask anything or try an example</h2>
                             <ExampleList onExampleClicked={onExampleClicked} useGPT4V={useGPT4V} />
                         </div>
@@ -344,12 +345,7 @@ const Chat = () => {
                     )}
 
                     <div className={styles.chatInput}>
-                        <QuestionInput
-                            clearOnSend
-                            placeholder="Message [ngixx]"
-                            disabled={isLoading}
-                            onSend={question => makeApiRequest(question)}
-                        />
+                        <QuestionInput clearOnSend placeholder="Message [ngixx]" disabled={isLoading} onSend={question => makeApiRequest(question)} />
                     </div>
                 </div>
 
