@@ -61,6 +61,7 @@ class ChatReadRetrieveReadApproach(ChatApproach):
         6. Answer referencing the facts listed in the list of sources below. 
         7. If the question is not in English, answer in the language used in the question.
         8. Each source has a name followed by colon and the actual information, always include the source name for each fact you use in the response. Use square brackets to reference the source, for example [info1.txt]. Don't combine sources, list each source separately, for example [info1.txt][info2.pdf].
+        {follow_up_questions_prompt}
         {injected_prompt}
         """
 
